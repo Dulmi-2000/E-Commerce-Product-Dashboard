@@ -1,8 +1,8 @@
 import { describe, it, expect, vi, beforeEach } from 'vitest';
 import { render, screen, fireEvent, waitFor } from '@testing-library/react';
-import { Dashboard } from '../components/Dashboard';
-import { useProducts } from '../hooks/useProducts';
-import { CATEGORIES } from '../constants';
+import { Dashboard } from '../Dashboard';
+import { useProducts } from '../../hooks/useProducts';
+import { CATEGORIES } from '../../constants';
 
 // Mock the useProducts hook
 vi.mock('../hooks/useProducts', () => ({
